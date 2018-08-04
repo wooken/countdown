@@ -25,3 +25,9 @@ function weeks_left() {
     weeks = weeks_since();
     return 52 - weeks;
 }
+
+function current_month() {
+    weeks = weeks_since();
+    months = weeks / 4;
+    return months;
+}
