@@ -4,21 +4,39 @@
         <title>Countdown until World Domination</title>
     </head>
     <body>
-        <div>
-            Day 
-            <script>document.write(days_since())</script>
-        </div>
-        <div>
-            Week 
-            <script>document.write(weeks_since())</script>
-        </div>
-        <div>
-            Days left: 
-            <script>document.write(days_left())</script>
-        </div>
-        <div>
-            Weeks left: 
-            <script>document.write(weeks_left())</script>
-        </div>
+
+        <table>
+            <tr>
+                <td>
+                    Day
+                </td>
+                <td>
+                    <script>document.write(days_since())</script>
+                </td>
+            </tr>
+            <td>
+                Days left
+            </td>
+            <td>
+                <script>document.write(days_left())</script>
+            </td>
+            <tr>
+                <td>
+                    Week
+                </td>
+                <td>
+                    <script>document.write(weeks_since())</script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Weeks left
+                </td>
+                <td>
+                    <script>document.write(weeks_left())</script>
+                </td>
+            </tr>
+        </table>
+
     </body>
 </html>
