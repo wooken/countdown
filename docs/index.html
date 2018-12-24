@@ -1,53 +1,70 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="skeleton.css">
-        <script src="work.js"></script>
-        <title>Countdown until World Domination</title>
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="skeleton.css">
+    <script src="work.js"></script>
+    <title>Countdown until World Domination</title>
+  </head>
+  <body>
 
-        <h1>Countdown until World Domination</h1>
+    <h1>Countdown until World Domination</h1>
 
-        <table>
-            <tr>
-                <td>
-                    Days since surgery
-                </td>
-                <td>
-                    <script>document.write(days_since())</script>
-                </td>
-            </tr>
-            <td>
-                Days of rehab left
-            </td>
-            <td>
-                <script>document.write(days_left())</script>
-            </td>
-            <tr>
-                <td>
-                    Weeks since surgery
-                </td>
-                <td>
-                    <script>document.write(weeks_since())</script>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Weeks of rehab left
-                </td>
-                <td>
-                    <script>document.write(weeks_left())</script>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Months since surgery
-                </td>
-                <td>
-                    <script>document.write(current_month())</script>
-                </td>
-            </tr>
-        </table>
+    <table>
 
-    </body>
+      <tr>
+        <th>
+          First day
+        </th>
+        <td><script>
+            document.write(start_day.toDateString())
+        </script></td>
+      </tr>
+
+      <tr>
+        <th>
+          Last day
+        </th>
+        <td><script>
+            document.write(last_day.toDateString())
+        </script></td>
+      </tr>
+
+      <tr>
+        <th>
+          Weeks pushed back
+        </th>
+        <td><script>
+            document.write(weeks_pushed_back);
+        </script></td>
+      </tr>
+
+      <tr>
+        <th>
+          Total Months
+        </th>
+        <td><script>
+            document.write(total_months);
+        </script></td>
+      </tr>
+
+      <tr>
+        <th>
+          Months elapsed
+        </th>
+        <td><script>
+            document.write(months_elapsed);
+        </script></td>
+      </tr>
+
+      <tr>
+        <th>
+          Months left
+        </th>
+        <td><script>
+            document.write(months_left);
+        </script></td>
+      </tr>
+
+    </table>
+
+  </body>
 </html>
