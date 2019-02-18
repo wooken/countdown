@@ -8,5 +8,5 @@ var total_months = Math.round(total_days / 30, 2);
 
 var ms_per_month = 30*24*60*60*1000; // days*hours*minutes*seconds*milliseconds
 var today = new Date();
-var months_elapsed = Math.round(((last_day.getTime() - today.getTime()) / ms_per_month), 2);
+var months_elapsed = Math.round(((today.getTime() - start_day.getTime()) / ms_per_month), 2);
 var months_left = total_months - months_elapsed;
